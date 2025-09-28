@@ -5,7 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "bs4>=0.0.2",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.29",
+    "langchain-openai>=0.3.33",
+    "langchain-qdrant>=0.2.1",
+    "lxml>=6.0.1",
     "py-iztro>=0.1.5",
+    "qdrant-client[fastembed]>=1.15.1",
 ]
 
 [dependency-groups]
