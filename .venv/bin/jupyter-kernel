@@ -1,4 +1,4 @@
-#!/home/mameuio/miniconda3/LLM/zhiweidoushu/.venv/bin/python3
+#!/home/mameuio/zhiweidoushu/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import sys
 from jupyter_client.kernelapp import main

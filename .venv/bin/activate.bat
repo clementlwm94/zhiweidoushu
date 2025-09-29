@@ -25,7 +25,7 @@
     @"%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@for %%i in ("/home/mameuio/miniconda3/LLM/zhiweidoushu/.venv") do @set "VIRTUAL_ENV=%%~fi"
+@for %%i in ("/home/mameuio/zhiweidoushu/.venv") do @set "VIRTUAL_ENV=%%~fi"
 
 @set "VIRTUAL_ENV_PROMPT=zhiweidoushu"
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (

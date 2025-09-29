@@ -53,7 +53,7 @@ export-env {
       }
     }
 
-    let virtual_env = '/home/mameuio/miniconda3/LLM/zhiweidoushu/.venv'
+    let virtual_env = '/home/mameuio/zhiweidoushu/.venv'
     let bin = 'bin'
 
     let is_windows = ($nu.os-info.family) == 'windows'
