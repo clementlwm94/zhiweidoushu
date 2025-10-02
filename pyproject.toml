@@ -17,6 +17,7 @@ dependencies = [
     "py-iztro>=0.1.5",
     "qdrant-client[fastembed]>=1.15.1",
     "rank-llm>=0.21.0",
+    "transformers>=4.56.2",
 ]
 
 [dependency-groups]

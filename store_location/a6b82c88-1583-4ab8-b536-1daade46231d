@@ -1,1 +1,0 @@
-{"lc": 1, "type": "constructor", "id": ["langchain", "schema", "document", "Document"], "kwargs": {"metadata": {"Header 1": "\u4e8c\u3001\u6597\u6570\u8bf8\u661f\u5206\u7c7b"}, "page_content": "\u4e8c\u3001\u6597\u6570\u8bf8\u661f\u5206\u7c7b", "type": "Document"}}
