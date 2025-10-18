@@ -4,8 +4,10 @@ Astrology Chart Generation Library
 This module provides functions to generate Chinese astrology charts using the py_iztro library.
 """
 
-from py_iztro import Astro
+from functools import lru_cache
 import json
+
+from py_iztro import Astro
 
 
 def person_information_extraction(astro_info):
@@ -176,6 +178,12 @@ def generate_full_chart(astrolabe_data):
     return '\n'.join(total_text)
 
 
+@lru_cache(maxsize=1)
+def _get_astro() -> Astro:
+    """Create and cache a single Astro engine instance."""
+    return Astro()
+
+
 def full_chart_generation(date, time, gender):
     """Generate complete astrology chart for a person.
     
@@ -187,7 +195,7 @@ def full_chart_generation(date, time, gender):
     Returns:
         str: Complete formatted astrology chart with person information
     """
-    astro = Astro()
+    astro = _get_astro()
     astrolabe = astro.by_solar(date, time, gender)
     astro_info = json.loads(astrolabe.model_dump_json())
     astro_star_data = astro_info['palaces']
@@ -213,6 +221,6 @@ def get_astro_data(date, time, gender):
     Returns:
         dict: Raw astrology data dictionary
     """
-    astro = Astro()
+    astro = _get_astro()
     astrolabe = astro.by_solar(date, time, gender)
     return json.loads(astrolabe.model_dump_json())

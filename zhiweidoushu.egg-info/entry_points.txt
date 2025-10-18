@@ -1,0 +1,2 @@
+[console_scripts]
+zhiwei-rag = zhiwei_rag.cli:main

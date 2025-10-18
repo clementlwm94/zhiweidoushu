@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: zhiweidoushu
+Version: 0.1.0
+Summary: 紫微斗数 Qdrant RAG 工具集
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: arize-otel>=0.10.0
+Requires-Dist: arize-phoenix>=12.2.0
+Requires-Dist: bs4>=0.0.2
+Requires-Dist: faiss-cpu>=1.12.0
+Requires-Dist: flashrank>=0.2.10
+Requires-Dist: fastapi>=0.110.0
+Requires-Dist: langchain>=0.3.27
+Requires-Dist: langchain-community>=0.3.29
+Requires-Dist: langchain-openai>=0.3.33
+Requires-Dist: langchain-qdrant>=0.2.1
+Requires-Dist: lxml>=6.0.1
+Requires-Dist: openinference-instrumentation-langchain>=0.1.52
+Requires-Dist: py-iztro>=0.1.5
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: qdrant-client[fastembed]>=1.15.1
+Requires-Dist: rank-llm>=0.21.0
+Requires-Dist: transformers>=4.56.2
+Requires-Dist: uvicorn[standard]>=0.30.0
+
+# zhiweidoushu
+docker run -p 6333:6333 -p 6334:6334    -v "$(pwd)/qdrant_storage:/qdrant/storage:z"    qdrant/qdrant
+docker pull arizephoenix/phoenix:latest
+docker run -p 6006:6006 -p 4317:4317 arizephoenix/phoenix:latest
+
+# pip install rank llm

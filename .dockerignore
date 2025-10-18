@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.egg-info/
+.dist/
+.build/
+.venv/
+.env
+.env.*
+.git/
+.gitignore
+.ipynb_checkpoints/
+*.ipynb
+qdrant_storage/
+store_location/
+to_ignore/
+results.bin
+LLM_QA_generated_answers.csv
+LLM_judge_result.csv
+ground-truth-data.csv
+ground_truth_forLLMjudge.csv
+documents-with-ids.json
+ziweidoushu book.html
+ziweidoushu book2.html
+zhiwei book.json
+"zhiweidoushu -101 book.txt"
