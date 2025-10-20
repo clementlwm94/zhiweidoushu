@@ -5,4 +5,5 @@ docker run -p 6006:6006 -p 4317:4317 arizephoenix/phoenix:latest
 
 uv run uvicorn rag_api:app --reload --host 0.0.0.0 --port 8000
 
-# pip install rank llm
+- igonore zhiweidoushu-egg.info
+- ignore venv folder
